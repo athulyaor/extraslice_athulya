@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forgot_dialog_layout"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:background="@color/theme_main_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_grey"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter payment password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/can_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="23dp"
+        android:background="@color/theme_third_color"
+        android:text="Cancel"
+        android:textColor="@color/text_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/can_button"
+        android:layout_alignBottom="@+id/can_button"
+        android:layout_alignRight="@+id/editText1"
+        android:background="@color/theme_third_color"
+        android:text="OK"
+        android:textColor="@color/text_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

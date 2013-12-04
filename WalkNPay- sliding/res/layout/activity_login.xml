@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="@color/theme_third_color" >
+
+    <TextView
+        android:id="@+id/forgot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/text_blue"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pass_edit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/login_reg"
+        android:layout_alignLeft="@+id/email_edit"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_grey"
+        android:ems="10"
+        android:hint="@string/txtpassword"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#707070"
+        android:textSize="16sp"
+        android:textStyle="normal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/pass_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/bg_grey"
+        android:ems="10"
+        android:hint="@string/txtemail"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#707070"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/login_reg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pass_edit"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/theme_main_color"
+            android:text="@string/txtlogin"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/theme_main_color"
+            android:text="@string/txtregister"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

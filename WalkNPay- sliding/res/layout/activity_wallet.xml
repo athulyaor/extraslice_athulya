@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrolView" 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+     android:background="@color/white">
+<LinearLayout 
+    android:id="@+id/lblllwallet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" 
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#C5CCD4"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/walletmycreditcards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/walletmycreditcards"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/walletplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/walletmycreditcards"
+            android:contentDescription="@string/txtCD"
+            android:paddingLeft="40dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/wallet_plus" />
+
+        <ImageView
+            android:id="@+id/walletminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/walletplus"
+            android:contentDescription="@string/txtCD"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/wallet_minus" />
+
+        <ListView
+            android:id="@+id/creditcardslist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/walletmycreditcards"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/walletmycreditcardsinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/walletmycreditcardsinfo"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#C5CCD4" >
+
+        <TextView
+            android:id="@+id/walletrecentbills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/walletrecentbills"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/recentbillslist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/walletrecentbills"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/walletrecentbillssearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recentbillslist"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="10dp"
+            android:text="@string/walletrecentbillssearch"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/walletrecentbillssearch"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/recentbillsedittext"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:background="@drawable/edit_text_focus"
+                android:gravity="left|center_horizontal"
+                android:hint="@string/walletrecentbillssearchedit"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/searchimage"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".2"
+                android:contentDescription="@string/txtCD"
+                android:src="@drawable/searchimage" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

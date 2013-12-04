@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#000000</color>
+    <color name="list_background">#F4F1EC</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#6E6E6E</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    
+    <color name="actionbar_background">#0b374d</color>
+    <color name="black">#000000</color>
+	<color name="white">#ffffff</color>
+	<color name="green">#00ff00</color>
+	<color name="red">#ff0000</color>
+	<color name="black_transparent">#00000000</color>
+	<color name="blue">#0000ff</color>	
+	
+	  <color name="theme_main_color">#5EB9FF</color>
+      <color name="theme_second_color">#F89C77</color>
+      <color name="theme_third_color">#F4F1EC</color>
+      <color name="text_blue">#286CB2</color>
+</resources>

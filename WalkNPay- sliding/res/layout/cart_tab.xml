@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"> -->
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cartlabels1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+      
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lblNoProductMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/noproductmessage"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartlabels"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+       android:visibility="gone"
+     android:layout_below="@+id/cartlabels1"
+        android:weightSum="7" >
+
+        <TextView
+            android:id="@+id/lbltvproductname"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/txtitem"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbltvproductcount"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Qty"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbltvprice"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:text="@string/txtPrice"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:gravity="left|center_horizontal"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lbllist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cartlabels"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@color/black_transparent"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:listSelector="@color/black_transparent"
+        android:scrollbars="none" >
+
+    </ListView>
+<ScrollView 
+    android:id="@+id/scroll1"
+    android:layout_width="fill_parent"
+     android:layout_below="@+id/lbllist"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/lbllist"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="7" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.3"
+                android:id="@+id/textlab2"
+                android:gravity="left|center_vertical"
+                android:text="@string/txtrewards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rewards_amt"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.7"
+                android:gravity="left|center_vertical"
+                android:text="@string/txtzero"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="7" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.3"
+                android:id="@+id/taxlabel"
+                android:gravity="left|center_vertical"
+                android:text="@string/txttax"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tax_amt"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.7"
+                android:gravity="left|center_vertical"
+                android:text="@string/txtzero"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="7" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.3"
+                android:gravity="left|center_vertical"
+                android:text="@string/txttotal"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_amt"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.7"
+                android:gravity="left|center_vertical"
+                android:text="@string/txtzero"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/scanner_button"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_checkoutl"
+                android:drawableTop="@drawable/scan_icon"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Scan"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/checkoutbutton"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_checkoutl"
+                android:drawableTop="@drawable/shoppingcart_checkout"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Checkout"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+<!-- </ScrollView> -->

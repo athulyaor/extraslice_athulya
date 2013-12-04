@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/logo_blue"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/actionbar_home_logo"
+        style="@style/ActionBarHomeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo"
+        android:contentDescription="@string/txtCD" />
+    
+    <!--  <ImageView
+        android:id="@+id/actionbar_"
+        style="@style/ActionBarHomeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_drawer"
+        android:contentDescription="@string/txtCD" /> -->
+
+     <TextView
+         android:id="@+id/actionbartitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="18dp"
+         android:layout_toRightOf="@+id/actionbar_home_logo"
+         android:gravity="center_vertical"
+         android:text="@string/txtwalknpay"
+         android:textColor="#ffffff"
+         android:textSize="38sp"
+         android:textStyle="bold" />
+
+</RelativeLayout>

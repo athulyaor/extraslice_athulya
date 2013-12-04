@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:weightSum="7" 
+    android:background="#f4f1ec">
+
+    <ImageView
+        android:id="@+id/imgassociate"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="3dp"
+        android:layout_weight=".5"
+        android:contentDescription="@string/txtCD"
+        android:src="@drawable/associate40" />
+
+    <TextView
+        android:id="@+id/lbltvproductname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2.8"
+        android:gravity="left|center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lbltvproductcount"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_weight=".7"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lbltvrowprice"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1.5"
+        android:gravity="right|center_vertical"
+        android:text="0.00"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgminus"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight=".5"
+        android:contentDescription="@string/txtCD"
+        android:src="@drawable/minus"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgplus"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="2dp"
+        android:layout_weight=".5"
+        android:contentDescription="@string/txtCD"
+        android:src="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/imgclear"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="3dp"
+        android:layout_weight=".5"
+        android:contentDescription="@string/txtCD"
+        android:src="@drawable/into" />
+
+</LinearLayout>
